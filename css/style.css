@@ -1,0 +1,54 @@
+html,
+body,
+header,
+#intro 
+{
+    height: 100%;
+}
+
+#intro {
+    background: url("../img/4.png")no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+.top-nav-collapse {
+    background-color: #960202;
+  }
+
+.buttun{
+    background-color: #a50000;
+  }
+.md-form input:focus{
+    box-shadow:0 1px 0 0 #960202 !important;
+    border-bottom: 1px solid #960202 !important;
+}
+.md-form input:focus+label{
+
+    color:#960202 !important
+
+}
+.md-form textarea:focus{
+    box-shadow:0 1px 0 0 #960202 !important;
+    border-bottom: 1px solid #960202 !important;
+}
+.md-form textarea:focus+label{
+    color:#960202 !important
+}
+.md-form .prefix.active {
+     color: #960202;   
+}
+.md-form input:valid{
+    color: #960202
+}
+.md-form input[type="email"]:not(.browser-default).valid+label:after{
+    color: #960202
+    content:
+    opacity: 1
+}
+.md-form input[type="email"]:not(.browser-default).valid{
+    border-bottom: 1px solid #c5c5c5;
+    -webkit-box-shadow: 0 1px 0 0 #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff
+}
