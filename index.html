@@ -603,6 +603,14 @@
       position: [106.570911, 29.488765],  //标记的地图坐标 
       map: map
     });
+    geolocation.getCurrentPosition();
+
+    AMap.event.addListener(geolocation, 'complete', (data)=>{
+        t.city=data.addressComponent.city;
+        t.$nextTick(function () {
+            search();
+         })
+      });//返回定位信息
   </script>
 
 </body>
